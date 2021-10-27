@@ -273,7 +273,7 @@ def color():
     k = 0
     index = 1
     fail = 0
-    format_change = True #True for files in edge code (5/6/7/8/9/10/11/12/13maxplanar.txt,problem12.txt) False for files in ascii format (10apollonian.txt,14/15maxplanar.txt,counterexample.txt,kempefails.txt)
+    format_change = True #True for files in edge code (5/6/7/8/9/10/11/12/13maxplanar.txt,problem12.txt) False for files in ascii format (10apollonian.txt,14/15maxplanar.txt,kempefails.txt)
     heuristicToggle = True #True if using heuristic 1 (-1 entries corresponding to creating a chain for each color) and False if using heuristic 2 (-1 entries only between a vertex in the K4 and one not in the K4)
     with open("11maxplanar.txt") as f:
         for line in f:
