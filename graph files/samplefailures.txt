@@ -1,0 +1,3 @@
+12 bcde,aefghic,abdij,acejk,abdfgk,beg,befklhi,bgi,bcghjkl,cdik,degijl,gik
+12 bcde,acefgh,abdhi,aceijkl,abdfgkl,beg,efhbl,bcgil,cdijkl,dik,dijl,ghikde
+13 bcdefg,aghijkc,abkd,acklime,admhgf,aeg,afehb,bgemi,bhmdlj,bilk,bjldc,dkji,dihe
