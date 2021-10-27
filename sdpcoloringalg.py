@@ -90,40 +90,6 @@ def mosek_check(n, m, edges, ci, cj ,cval):
                 return r,p,X,S
 
 
-def translate_input(line):
-    """
-    translate_input translates the format of a graph from adjacency list format to ascii
-    :param line: a graph encoded via an adjacency list
-    :return: the graph represented by line in ascii format
-    """
-    line = line[line.index(':'):]
-    line = line.replace('[', ' ')
-    line = line.replace(']', ',')
-    line = line.replace('20', 't')
-    line = line.replace('19', 's')
-    line = line.replace('18', 'r')
-    line = line.replace('17', 'q')
-    line = line.replace('16', 'p')
-    line = line.replace('15', 'o')
-    line = line.replace('14', 'n')
-    line = line.replace('13', 'm')
-    line = line.replace('12', 'l')
-    line = line.replace('11', 'k')
-    line = line.replace('10', 'j')
-    line = line.replace('9', 'i')
-    line = line.replace('8', 'h')
-    line = line.replace('7', 'g')
-    line = line.replace('6', 'f')
-    line = line.replace('5', 'e')
-    line = line.replace('4', 'd')
-    line = line.replace('3', 'c')
-    line = line.replace('2', 'b')
-    line = line.replace('1', 'a')
-    line = line.replace(' ', '')
-    line = line[:-2]
-    return line
-
-
 def findK4(edges, n):
     """
     findK4 searches for a clique (K4) in the graph
@@ -154,13 +120,13 @@ def updateColors(X,K,n):
     colors = [[K[0]], [K[1]], [K[2]], [K[3]]]
     for k in range(4):  # checks to see which vertices were successfully colored and stores them with the matching K4 vertex
         for g in range(n):
-            if g not in K and abs(X[g][K[k]] - 1.0) <= .001:
+            if g not in K and abs(X[g][K[k]] - 1.0) <= precision:
                 colored.append(g)
                 colors[k].append(g)
 
     return colored, colors
 
-def checkColorAttempt(cval, X, i, j):
+def checkColorAttempt(newAssign,cval, X, i, j):
     """
     checkColorAttempt checks if the primal entry corresponding to the most recent cost matrix entry change is equal to 1
     :param cval: the nonzero entries in the cost matrix
@@ -169,7 +135,9 @@ def checkColorAttempt(cval, X, i, j):
     :param j: the vertex corresponding to i's assigned color
     :return: a boolean indicating whether the assignment was successful or not
     """
-    if len(cval) > 0 and (cval[len(cval) - 1] == -1.0 and abs(X[i][j] - 1.0) > .001):
+    if not newAssign:
+        return True
+    if len(cval) > 0 and (cval[len(cval) - 1] == -1.0 and abs(X[i][j] - 1.0) > precision):
         return False
     return True
 
@@ -200,7 +168,7 @@ def buildCosts(heuristicToggle, colors,colored,badcolors,ci,cj,cval,l,n,r,X,K,i)
     if l != n and r > 3:
         while True:
             for k in range(4):
-                if i not in colored and K[k] not in badcolors and abs(1.0 - X[i][K[k]]) >= .001 and abs(-1.0 / 3 - X[i][K[k]]) >= .001:
+                if i not in colored and K[k] not in badcolors and abs(1.0 - X[i][K[k]]) >= precision and abs(-1.0 / 3 - X[i][K[k]]) >= precision:
                     if heuristicToggle:
                         newci = []
                         newcj = []
@@ -228,11 +196,10 @@ def buildCosts(heuristicToggle, colors,colored,badcolors,ci,cj,cval,l,n,r,X,K,i)
             badcolors = []
     return ci,cj,cval,badcolors,i,i
 
-def read_graph(line, format_change):
+def read_graph(line):
     """
     read_graph reads a line representing a graph and translates it to a list of edges
     :param line: an edge list or ascii representation of a graph
-    :param format_change: a boolean indicating whether line is an edge list (True) or ascii representation (False)
     :return:
         n: the number of vertices in the graph
         m: the number of edges in the graph
@@ -240,14 +207,10 @@ def read_graph(line, format_change):
     """
     s = 'abcdefghijklmnopqrstuvwxyz'
     line.strip()
-    if format_change:
-        elts = translate_input(line)
-        adj = elts.split(",")
-        n = len(adj)
-    else:
-        elts = line.split()
-        n = int(elts[0])
-        adj = elts[1].split(",")
+
+    elts = line.split()
+    n = int(elts[0])
+    adj = elts[1].split(",")
     m = 0
     edges = []
     for i in range(n): #creates the edges
@@ -273,11 +236,10 @@ def color():
     k = 0
     index = 1
     fail = 0
-    format_change = True #True for files in edge code (5/6/7/8/9/10/11/12/13maxplanar.txt,problem12.txt) False for files in ascii format (10apollonian.txt,14/15maxplanar.txt,kempefails.txt)
     heuristicToggle = True #True if using heuristic 1 (-1 entries corresponding to creating a chain for each color) and False if using heuristic 2 (-1 entries only between a vertex in the K4 and one not in the K4)
-    with open("11maxplanar.txt") as f:
+    with open("graph files/12maxplanarnew.txt") as f:
         for line in f:
-            n,m,edges = read_graph(line, format_change)
+            n,m,edges = read_graph(line)
 
             K, hasK4 = findK4(edges, n) #identifies a K4 in the input graph
 
@@ -296,15 +258,16 @@ def color():
                 iter = 0
                 wasbad = False
                 badcolors = []
+                newAssign = False
                 while r > 3 and len(goodset) != n and iter<100: #loops through SDP until desired rank is achieved or 100 iterations have been attempted (enough to try all remaining colors on all remaining vertices)
-
                     r,p,X,S = mosek_check(n, m, edges, ci, cj, cval) #solves the SDP with the given cost matrix assignments
 
                     colored, colors = updateColors(X,K,n)
 
-                    colorSuccess = checkColorAttempt(cval, X, i, j)
+                    colorSuccess = checkColorAttempt(newAssign,cval, X, i, j)
 
                     if not colorSuccess: #checks to see if the Xij value corresponding to most recent Cij value was set to 1
+                        newAssign = False
                         wasbad = True
                         badcolors.append(j)
                         ci = ci[:-1]
@@ -320,6 +283,7 @@ def color():
                             else: wasbad = False
 
                         ci,cj,cval,badcolors,i,j = buildCosts(heuristicToggle, colors,colored,badcolors, ci, cj, cval,len(goodset),n,r,X,K,i)
+                        newAssign = True
 
                     iter+=1
                 if r>=4:
@@ -333,6 +297,6 @@ def color():
     print("The number of graphs successfully colored was %d" %num_successes)
     print("The number of graphs not containing a K4 was %d" %noK4)
 
-
+precision = .001
 color()
 
