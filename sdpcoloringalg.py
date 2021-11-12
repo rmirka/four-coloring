@@ -168,29 +168,30 @@ def buildCosts(heuristicToggle, colors,colored,badcolors,ci,cj,cval,l,n,r,X,K,i)
     if l != n and r > 3:
         while True:
             for k in range(4):
-                if i not in colored and K[k] not in badcolors and abs(1.0 - X[i][K[k]]) >= precision and abs(-1.0 / 3 - X[i][K[k]]) >= precision:
-                    if heuristicToggle:
-                        newci = []
-                        newcj = []
-                        newcval = []
+                if i not in colored and i not in ci and i not in cj and K[k] not in badcolors:
+                    if abs(1.0 - X[i][K[k]]) >= precision and abs(-1.0 / 3 - X[i][K[k]]) >= precision:
+                        if heuristicToggle:
+                            newci = []
+                            newcj = []
+                            newcval = []
 
-                        for m in range(4):
-                            for q in range(len(colors[m]) - 1):
-                                newci.append(max(colors[m][q], colors[m][q + 1]))
-                                newcj.append(min(colors[m][q], colors[m][q + 1]))
-                                newcval.append(-1.0)
+                            for m in range(4):
+                                for q in range(len(colors[m]) - 1):
+                                    newci.append(max(colors[m][q], colors[m][q + 1]))
+                                    newcj.append(min(colors[m][q], colors[m][q + 1]))
+                                    newcval.append(-1.0)
 
-                        newci.append(max(colors[k][len(colors[k]) - 1], i))  # this option builds the chain of colors
-                        newcj.append(min(colors[k][len(colors[k]) - 1], i))
-                        newcval.append(-1.0)
-                        j = K[k]
-                        return newci,newcj,newcval,badcolors,i,j
-                    else:
-                        ci += [max(i, K[k])]  # this only changes entries involving the K4
-                        cj += [min(i, K[k])]
-                        cval += [-1.0]
-                        j = K[k]
-                        return ci,cj,cval,badcolors,i,j
+                            newci.append(max(colors[k][len(colors[k]) - 1], i))  # this option builds the chain of colors
+                            newcj.append(min(colors[k][len(colors[k]) - 1], i))
+                            newcval.append(-1.0)
+                            j = K[k]
+                            return newci,newcj,newcval,badcolors,i,j
+                        else:
+                            ci += [max(i, K[k])]  # this only changes entries involving the K4
+                            cj += [min(i, K[k])]
+                            cval += [-1.0]
+                            j = K[k]
+                            return ci,cj,cval,badcolors,i,j
 
             i = (i+1)%n
             badcolors = []
@@ -236,9 +237,12 @@ def color():
     k = 0
     index = 1
     fail = 0
+    failure_indices = []
     heuristicToggle = True #True if using heuristic 1 (-1 entries corresponding to creating a chain for each color) and False if using heuristic 2 (-1 entries only between a vertex in the K4 and one not in the K4)
-    with open("graph files/12maxplanarnew.txt") as f:
+    with open("graph files/14maxplanar2.txt") as f:
         for line in f:
+            # if index % 1000 == 0:
+            #     print(failure_indices)
             n,m,edges = read_graph(line)
 
             K, hasK4 = findK4(edges, n) #identifies a K4 in the input graph
@@ -282,21 +286,25 @@ def color():
                                 badcolors = []
                             else: wasbad = False
 
-                        ci,cj,cval,badcolors,i,j = buildCosts(heuristicToggle, colors,colored,badcolors, ci, cj, cval,len(goodset),n,r,X,K,i)
+                        ci,cj,cval,badcolors,i,j,noColorChoice = buildCosts(heuristicToggle, colors,colored,badcolors, ci, cj, cval,len(goodset),n,r,X,K,i)
+
                         newAssign = True
 
                     iter+=1
-                if r>=4:
-                    fail+=1
+
                 if r <=3 or len(goodset) == n: #accounts for lack of precision
                     num_successes +=1
+                else:
+                    fail += 1
+                    failure_indices += [index]
                 k += 1
                 index +=1
 
     print("The total number of graphs was %d" %(index-1))
     print("The number of graphs successfully colored was %d" %num_successes)
     print("The number of graphs not containing a K4 was %d" %noK4)
+    print("The indices of graphs that failed are ", failure_indices)
 
-precision = .001
+precision = .0001
 color()
 
