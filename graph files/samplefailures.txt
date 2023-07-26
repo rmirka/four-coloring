@@ -1,3 +1,21 @@
+32 bcdestwx,acefghoputsr,abdhituvyx,aceijklwxyzCEF,abdfglmnrswF,begnor,efhblmnopq,bcgilqpuvB,cdhjklvyzABD,dikzAC,dijlADCE,ghikdemqBDEF,egl,efg,fbg,bhg,ghl,fbe,abe,abc,bch,chi,ade,adc,cid,ijd,ijk,hil,jkd,ikl,kld,edl
+
+
+12 bcde,aefghic,abdij,acejk,abdfgk,beg,befklhi,bgi,bcghjkl,cdik,degijl,gik
+12 bcde,acefgh,abdhi,aceijkl,abdfgkl,beg,efhbl,bcgil,cdijkl,dik,dijl,ghikde
+13 bcdefg,aghijkc,abkd,acklime,admhgf,aeg,afehb,bgemi,bhmdlj,bilk,bjldc,dkji,dihe
+
+32 bcdestwx,acefghoputsr,abdhituvyx,aceijklwxyzCEF,abdfglmnrswF,begnor,efhblmnopq,bcgilqpuvB,cdhjklvyzABD,dikzAC,dijlADCE,ghikdemqBDEF,egl,efg,fbg,bhg,ghl,fbe,abe,abc,bch,chi,ade,adc,cid,ijd,ijk,hil,jkd,ikl,kld,edl
+
+32 bcdestwx,ghcaefoputsr,bhidatuvyx,acijklewxyzCEF,gfbadlmnrswF,gbenor,efbhlmnopq,gbcilqpuvB,chlkjdyvBDAz,ikdzAC,ijdlDACE,ghikdeFEDBqm,gle,fge,fbg,bhg,hgl,fbe,abe,abc,bch,chi,ade,adc,cid,ijd,ijk,hil,jkd,ikl,kld,dle
+
+5 be,ac,bd,ce,da
+11 fbhdicge,fahdke,aidjeg,kejciahb,agcjdkbf,abe,ace,abd,acd,ced,bde
+
+13 bcdem,acefghm,abdhi,aceijkl,abdfglm,beg,efhbl,bcgil,cdhjkl,dik,dijl,ghikde,abe
+
+12 bcde,acefgh,abdhi,aceijkl,abdfgl,beg,efhbl,bcgil,cdhjkl,dik,dijl,ghikde
+
 12 bcde,aefghic,abdij,acejk,abdfgk,beg,befklhi,bgi,bcghjkl,cdik,degijl,gik
 12 bcde,acefgh,abdhi,aceijkl,abdfgkl,beg,efhbl,bcgil,cdijkl,dik,dijl,ghikde
 13 bcdefg,aghijkc,abkd,acklime,admhgf,aeg,afehb,bgemi,bhmdlj,bilk,bjldc,dkji,dihe

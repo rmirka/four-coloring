@@ -1,0 +1,2 @@
+10 bcdef,acdef,abdef,abcef,abcdf,abcdeg,fh,gi,hj,i
+7 bcdef,acde,abdefg,abcf,abc,acd,cef

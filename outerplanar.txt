@@ -1,0 +1,7 @@
+10 bcd,acefgh,abdhi,aci,bfj,begj,bfh,bcg,cd,ef
+10 bc,acd,abdef,bceghi,cdfi,ce,dhj,dgij,deh,gh
+10 bc,acd,abde,bcefgh,cdhi,dgj,dfhj,degi,eh,fg
+10 bcd,ace,abdefg,acghij,bcf,ce,cdh,dgi,dhj,di
+10 bc,acde,abefgh,bei,bcdfij,ceg,cfh,cg,dej,ei
+10 bcdefg,ac,abdh,acehij,adfj,aeg,af,cdi,dh,de
+10 bcd,ac,abdef,acfgh,cfi,cdegij,dfh,dg,efj,fi

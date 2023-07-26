@@ -1,3 +1,8 @@
+13 bcdefghij,ajklc,abld,acle,adlgf,aeg,afelkh,agkmi,ahmkj,aikb,bjimhgl,bkgedc,hki
+13 bcdefghij,ajkc,abkd,acklme,admlgf,aeg,afelh,agli,ahlj,ailkb,bjldc,dkjihgem,dle
+13 bcdefghijk,aklmc,abmd,acme,admlhf,aehg,afh,agfeli,ahlj,ailk,ajlb,bkjihem,bledc
+13 bcdefghij,ajkilc,abld,acle,adlf,aelmg,afmh,agmi,ahmlbkj,aikb,bji,bimfedc,flihg
+13 bcdefghijk,akjlc,abld,acle,adlf,aelmg,afmh,agmji,ahj,aihmlbk,ajb,bjmfedc,fljhg
 13 bcdefghi,aijkhlmdc,abd,acbmhgfe,adf,aedg,afdh,agdmlbki,ahkjb,bik,bjih,bhm,blhd
 13 bcdefghi,aijhkldc,abd,acblhgfe,adf,aedg,afdh,agdlkbjmi,ahmjb,bimh,bhl,bkhd,hji
 13 bcdefghi,aijhklmdc,abd,acbmlhgfe,adf,aedg,afdh,agdlkbji,ahjb,bih,bhl,bkhdm,bld
@@ -11186,7 +11191,6 @@
 13 bcdefghij,ajklc,abld,aclme,admf,aemg,afmh,agmi,ahmlj,ailkb,bjl,bkjimdc,dlihgfe
 13 bcdefghijk,aklc,abled,ace,adclmf,aemg,afmh,agmi,ahmj,aimlk,ajlb,bkjmec,eljihgf
 13 bcdefghijk,aklc,ablmed,ace,adcmf,aemg,afmh,agmi,ahmlj,ailk,ajlb,bkjimc,clihgfe
-13 bcdefghijk,aklmc,abmed,ace,adcmf,aemg,afmh,agmli,ahlj,ailk,ajlb,bkjihm,blhgfec
 13 bcdefghijk,aklc,abled,ace,adclf,aelg,aflmh,agmi,ahmj,aimk,ajmlb,bkmgfec,glkjih
 13 bcdefghij,ajkc,abkd,acke,adklmf,aemlg,aflh,agli,ahlkj,aikb,bjiledc,ekihgfm,elf
 13 bcdefghij,ajkc,abkd,acke,adklmf,aemg,afmh,agmi,ahmkj,aikb,bjimledc,ekm,elkihgf
@@ -11452,9 +11456,6 @@
 13 bcdefghijk,aklmedc,abd,acbe,adbmf,aemg,afmh,agmi,ahmlj,ailk,ajlb,bkjim,blihgfe
 13 bcdefghijk,aklmdc,abd,acbme,admf,aemg,afmih,agi,ahgmlj,ailk,ajlb,bkjim,bligfed
 13 bcdefghijk,aklc,ablmed,ace,adcmf,aemg,afmlih,agi,ahglj,ailk,ajlb,bkjigmc,clgfe
-13 bcdefghijk,aklmc,abmd,acme,admlhf,aehg,afh,agfeli,ahlj,ailk,ajlb,bkjihem,bledc
-13 bcdefghij,ajkilc,abld,acle,adlf,aelmg,afmh,agmi,ahmlbkj,aikb,bji,bimfedc,flihg
-13 bcdefghijk,akjlc,abld,acle,adlf,aelmg,afmh,agmji,ahj,aihmlbk,ajb,bjmfedc,fljhg
 13 bcdefghij,ajklmdc,abd,acbme,admf,aemg,afmh,agmki,ahkj,aikb,bjihml,bkm,blkhgfed
 13 bcdefghij,ajkldc,abd,acble,adlf,aelg,aflh,aglmki,ahkj,aikb,bjihml,bkmhgfed,hlk
 13 bcdefghij,ajkldc,abd,acble,adlf,aelg,aflh,aglkmi,ahmkj,aikb,bjimhl,bkhgfed,hki
@@ -11465,7 +11466,6 @@
 13 bcdefghijk,akjlc,abled,ace,adclf,aelmg,afmh,agmi,ahmlj,ailbk,ajb,bjimfec,flihg
 13 bcdefghijk,aklc,abled,ace,adclmf,aemg,afmh,agmli,ahlkj,aik,ajilb,bkihmec,elhgf
 13 bcdefghijk,aklc,ablmed,ace,adcmf,aemg,afmlh,aglji,ahj,aihlk,ajlb,bkjhgmc,clgfe
-13 bcdefghij,ajkc,abkd,acklme,admlgf,aeg,afelh,agli,ahlj,ailkb,bjldc,dkjihgem,dle
 13 bcdefghij,ajkc,abkd,ackle,adlgmf,aemg,afmelh,agli,ahlj,ailkb,bjldc,dkjihge,egf
 13 bcdefghijk,aklc,abld,aclmfe,adf,aedmhg,afh,agfmi,ahmj,aimk,ajmlb,bkmdc,dlkjihf
 13 bcdefghijk,akldc,abd,acble,adlf,aelg,aflmh,agmi,ahmkj,aik,ajimlb,bkmgfed,glkih
@@ -12727,7 +12727,6 @@
 13 bcdefghijk,aklc,ablfed,ace,adcf,aeclmg,afmh,agmi,ahmj,aimlk,ajlb,bkjmfc,fljihg
 13 bcdefghijk,akldc,abd,acblme,admf,aemg,afmih,agi,ahgmlj,ailk,ajlb,bkjimd,dligfe
 13 bcdefghijk,aklc,ablmed,ace,adcmf,aemg,afmih,agi,ahgmlj,ailk,ajlb,bkjimc,cligfe
-13 bcdefghij,ajklc,abld,acle,adlgf,aeg,afelkh,agkmi,ahmkj,aikb,bjimhgl,bkgedc,hki
 13 bcdefghijk,aklmc,abmd,acme,admgf,aeg,afemlih,agi,ahglj,ailk,ajlb,bkjigm,blgedc
 13 bcdefghij,ajklc,abld,acle,adlmf,aemg,afmh,agmji,ahj,aihmlkb,bjl,bkjmedc,eljhgf
 13 bcdefghijk,aklc,abld,acle,adlmf,aemg,afmh,agmki,ahkj,aik,ajihmlb,bkmedc,elkhgf

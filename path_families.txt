@@ -1,0 +1,4 @@
+10 b,ac,bd,c,f,eg,fh,gi,hj,i
+10 b,ac,bd,ce,df,eg,fh,gi,hj,i
+10 b,ac,b,e,df,eg,f,i,hj,i
+10 b,ac,bd,ce,df,eg,fh,gi,hj,i

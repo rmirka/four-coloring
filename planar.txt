@@ -1,0 +1,132 @@
+10 bcdefghi,aijfedc,abd,acbe,adbf,aebjg,afjh,agji,ahjb,bihgf
+10 bcdefghi,aijedc,abd,acbe,adbjf,aejg,afjh,agji,ahjb,bihgfe
+10 bcdefghi,aijdc,abd,acbje,adjf,aejg,afjh,agji,ahjb,bihgfed
+10 bcdefghi,aijfdc,abd,acbfe,adf,aedbjg,afjh,agji,ahjb,bihgf
+10 bcdefghi,aidc,abd,acbije,adjf,aejhg,afh,agfji,ahjdb,dihfe
+10 bcdefghi,aihjdc,abd,acbje,adjgf,aeg,afejh,agjbi,ahb,bhged
+
+
+
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+10 bcdefghi,aihjc,abjhgfed,ace,adcf,aecg,afch,agcjbi,ahb,bhc
+10 bcdefghi,aihc,abhjgfed,ace,adcf,aecg,afcjh,agjcbi,ahb,chg
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+
+
+9 bcdeg,ace,abefgi,aegh,abcdfhi,cei,acdhi,degi,cefgh
+
+7 bcdefg,adc,abdg,acbgfe,adf,aedg,acdf
+8 bcdefgh,ahdc,abd,acbhgfe,adf,aedg,afdh,agdb
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+
+
+5 bcde,acde,abd,acbe,abd
+6 bcdef,acdf,abd,acbef,adf,abde
+7 bcdefg,adc,abdg,acbgfe,adf,aedg,acdf
+8 bcdefgh,ahdc,abd,acbhgfe,adf,aedg,afdh,agdb
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+11 bcdefghi,aihjdc,abd,acbjhgfek,adf,aedg,afdh,agdjbik,ahb,bhdk,dhj
+12 bcdefghil,aihjdc,abd,acbjhgfek,adf,aedg,afdhl,agdjbikl,ahb,bhdk,dhj,ahg
+13 bcdefghilm,aihjdc,abd,acbjhgfek,adf,aedg,afdhl,agdjbiklm,ahb,bhdk,dhj,ahgm,ahl
+
+
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+8 bcdefgh,ahdc,abd,acbhgfe,adf,aedg,afdh,agdb
+10 bcdefghi,aijc,abjid,acie,adihgf,aeg,afeh,agei,ahedcjb,bic
+11 bcdefghi,aihjdc,abd,acbjhgfek,adf,aedg,afdh,agdjbik,ahb,bhdk,dhj
+13 bcdefghilm,aihjdc,abd,acbjhgfek,adf,aedg,afdhl,agdjbiklm,ahb,bhdk,dhj,ahgm,ahl
+
+
+7 bcdefg,adcg,abd,acbgfe,adf,aedg,afdb
+
+
+5 bcde,acde,abd,acbe,abd
+6 bcdef,acdf,abd,acbef,adf,abde
+7 bcdefg,adc,abdg,acbgfe,adf,aedg,acdf
+8 bcdefgh,ahdc,abd,acbhgfe,adf,aedg,afdh,agdb
+9 bcdefghi,aihdc,abd,acbhgfe,adf,aedg,afdh,agdbi,ahb
+10 bcdefghi,aihjdc,abd,acbjhgfe,adf,aedg,afdh,agdjbi,ahb,bhd
+10 bcdefghi,aihdc,abd,acbhjgfe,adf,aedg,afdjh,agjdbi,ahb,dhg
+10 bcdefghi,aihdc,abd,acbhgjfe,adf,aedjg,afjdh,agdbi,ahb,dgf
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+10 bcdefghi,aihjc,abjhgfed,ace,adcf,aecg,afch,agcjbi,ahb,bhc
+10 bcdefghi,aihc,abhjgfed,ace,adcf,aecg,afcjh,agjcbi,ahb,chg
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+10 bcdefghi,aijc,abjid,acie,adihgf,aeg,afeh,agei,ahedcjb,bic
+11 bcdefghi,aihjdc,abd,acbjhgfek,adf,aedg,afdh,agdjbik,ahb,bhdk,dhj
+12 bcdefghil,aihjdc,abd,acbjhgfek,adf,aedg,afdhl,agdjbikl,ahb,bhdk,dhj,ahg
+
+
+10 bcdefghik,aihjdck,abd,acbjhgfe,adf,aedg,afdh,agdjbi,ahbk,bhdk
+
+
+5 bcde,acde,abd,acbe,abd
+6 bcdef,acdf,abd,acbef,adf,abde
+7 bcdefg,adc,abdg,acbgfe,adf,aedg,acdf
+8 bcdefgh,ahdc,abd,acbhgfe,adf,aedg,afdh,agdb
+9 bcdefghi,aihdc,abd,acbhgfe,adf,aedg,afdh,agdbi,ahb
+
+
+
+
+10 bcdefghi,aihjc,abjhgfed,ace,adcf,aecg,afch,agcjbi,ahb,bhc
+10 bcdefghi,aihc,abhjgfed,ace,adcf,aecg,afcjh,agjcbi,ahb,chg
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+10 bcdefghi,aihc,abhgfejd,acje,adjcf,aecg,afch,agcbi,ahb,ced
+10 bcdefghij,ajic,abihgfd,acfe,adf,aedcg,afch,agci,ahcbj,aib
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+10 bcdefghi,aijc,abjid,acie,adihgf,aeg,afeh,agei,ahedcjb,bic
+
+
+11 bcdefghik,aihjdck,abd,acbjhgfe,adf,aedg,afdh,agdjbi,ahbk,bhdk,abij
+
+4 bcd,adc,abd,acb
+5 bcde,acde,abd,acbe,abd
+6 bcdef,acdf,abd,acbef,adf,abde
+7 bcdefg,adc,abdg,acbgfe,adf,aedg,acdf
+8 bcdefgh,ahdc,abd,acbhgfe,adf,aedg,afdh,agdb
+9 bcdefghi,aihdc,abd,acbhgfe,adf,aedg,afdh,agdbi,ahb
+
+6 bde,acd,bdf,abcef,adf,cde
+
+
+4 bcd,acd,abd,abc
+5 bcde,acd,abd,abc,a
+5 bcd,acde,abd,abc,b
+6 bcdef,acd,abd,abc,a,a
+6 bcde,acdf,abd,abc,a,b
+7 bcdeg,acdfg,abdg,abc,ag,bg,abcef
+10 bcdefghi,aihjdc,abd,acbjhgfe,adf,aedg,afdh,agdjbi,ahb,bhd
+
+5 bcd,acde,abd,abc,b
+6 bcdef,acd,abd,abc,a,a
+6 bcde,acd,abd,abcf,af,de
+7 bcde,acd,abd,abcf,afg,de,ace
+10 bcdefghi,aihjdc,abd,acbjhgfe,adf,aedg,afdh,agdjbi,ahb,bhd
+10 bcdefghi,aihdc,abd,acbhjgfe,adf,aedg,afdjh,agjdbi,ahb,dhg
+10 bcdefghi,aihdc,abd,acbhgjfe,adf,aedjg,afjdh,agdbi,ahb,dgf
+10 bcdefghi,aihjc,abjhgfed,ace,adcf,aecg,afch,agcjbi,ahb,bhc
+10 bcdefghi,aihc,abhjgfed,ace,adcf,aecg,afcjh,agjcbi,ahb,chg
+10 bcdefghi,aihc,abhgjfed,ace,adcf,aecjg,afjch,agcbi,ahb,cgf
+10 bcdefghi,aihc,abhgfjed,ace,adcjf,aejcg,afch,agcbi,ahb,cfe
+10 bcdefghi,aihc,abhgfejd,acje,adjcf,aecg,afch,agcbi,ahb,ced
+10 bcdefghij,ajic,abihgfd,acfe,adf,aedcg,afch,agci,ahcbj,aib
+10 bcdefghij,ajfedc,abd,acbe,adbf,aebjihg,afh,agfi,ahfj,aifb
+10 bcdefghi,aijc,abjid,acie,adihgf,aeg,afeh,agei,ahedcjb,bic
+10 bcdefghij,ajc,abjd,acje,adjhgf,aeg,afeh,ageji,ahj,aihedcb
+10 bcdefghi,aigc,abgfjed,ace,adcjf,aejcg,afcbih,agi,ahgb,cfe
+10 bcdefghi,aigc,abgjfed,ace,adcf,aecjg,afjcbih,agi,ahgb,cgf
+10 bcdefghij,ajc,abjed,ace,adcjhgf,aeg,afeh,ageji,ahj,aihecb
+
+4 bcd,acd,abd,abc
+6 bcdef,ace,abd,acf,abf,ade
+6 bde,acd,bdf,abcef,adf,cde
